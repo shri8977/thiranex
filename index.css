@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+@media (min-width:768px){
+    .projects{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media (min-width:1024px){
+    .projects{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
