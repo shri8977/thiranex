@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shri Subashini | Web Developer Portfolio</title>
+
+    <meta name="description"
+        content="Portfolio of Shri Subashini, aspiring web developer showcasing projects, skills, and contact information.">
+
+    <meta name="keywords"
+        content="Web Developer, Portfolio, HTML5, CSS3, JavaScript, Frontend Developer">
+
+    <meta name="author" content="Shri Subashini">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header,
+        nav,
+        main,
+        section,
+        footer {
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+        }
+
+        .skip-link:focus {
+            left: 10px;
+            top: 10px;
+            background: #fff;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        form {
+            max-width: 500px;
+        }
+
+        label,
+        input,
+        textarea,
+        button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        input,
+        textarea {
+            padding: 8px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">
+        Skip to Main Content
+    </a>
+
+    <header role="banner">
+        <h1>Shri Subashini</h1>
+        <p>Aspiring Web Developer</p>
+
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <section aria-labelledby="about-heading" id="about">
+            <h2 id="about-heading">About Me</h2>
+
+            <img src="https://via.placeholder.com/200"
+                alt="Profile placeholder image"
+                width="200"
+                height="200">
+
+            <p>
+                I am a Computer Science student passionate about web
+                development, accessibility, and modern web technologies.
+            </p>
+        </section>
+
+        <section aria-labelledby="skills-heading" id="skills">
+            <h2 id="skills-heading">Skills</h2>
+
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Git & GitHub</li>
+                <li>Responsive Design</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="projects-heading" id="projects">
+            <h2 id="projects-heading">Projects</h2>
+
+            <article>
+                <h3>Portfolio Website</h3>
+                <p>
+                    A semantic and accessible personal portfolio website.
+                </p>
+            </article>
+
+            <article>
+                <h3>Task Manager</h3>
+                <p>
+                    A productivity application for managing daily tasks.
+                </p>
+            </article>
+        </section>
+
+        <section aria-labelledby="contact-heading" id="contact">
+            <h2 id="contact-heading">Contact Me</h2>
+
+            <form aria-label="Contact Form">
+
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required>
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required>
+
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Shri Subashini. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
